@@ -22,16 +22,12 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        SuspendLayout()
-        ' 
-        ' Form1
-        ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
-        AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1053, 559)
-        Name = "Form1"
-        Text = "Form1"
-        ResumeLayout(False)
+        components = New System.ComponentModel.Container()
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Text = "Form1"
     End Sub
+
+    Friend WithEvents Label1 As Label
 
 End Class
