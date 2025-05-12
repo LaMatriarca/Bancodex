@@ -28,6 +28,7 @@ Partial Class Form1
         GroupBox1 = New GroupBox()
         ImageList1 = New ImageList(components)
         LinkLabel1 = New LinkLabel()
+        Button2 = New Button()
         SuspendLayout()
         ' 
         ' Button1
@@ -73,11 +74,21 @@ Partial Class Form1
         LinkLabel1.TabStop = True
         LinkLabel1.Text = "LinkLabel1"
         ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(583, 52)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(94, 29)
+        Button2.TabIndex = 4
+        Button2.Text = "Button2"
+        Button2.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Button2)
         Controls.Add(LinkLabel1)
         Controls.Add(GroupBox1)
         Controls.Add(Label2)
@@ -94,5 +105,6 @@ Partial Class Form1
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents ImageList1 As ImageList
     Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents Button2 As Button
 
 End Class
