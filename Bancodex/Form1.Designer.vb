@@ -22,9 +22,12 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Button1 = New Button()
         Label2 = New Label()
         GroupBox1 = New GroupBox()
+        ImageList1 = New ImageList(components)
+        LinkLabel1 = New LinkLabel()
         SuspendLayout()
         ' 
         ' Button1
@@ -54,11 +57,28 @@ Partial Class Form1
         GroupBox1.TabStop = False
         GroupBox1.Text = "GroupBox1"
         ' 
+        ' ImageList1
+        ' 
+        ImageList1.ColorDepth = ColorDepth.Depth32Bit
+        ImageList1.ImageSize = New Size(16, 16)
+        ImageList1.TransparentColor = Color.Transparent
+        ' 
+        ' LinkLabel1
+        ' 
+        LinkLabel1.AutoSize = True
+        LinkLabel1.Location = New Point(618, 337)
+        LinkLabel1.Name = "LinkLabel1"
+        LinkLabel1.Size = New Size(79, 20)
+        LinkLabel1.TabIndex = 3
+        LinkLabel1.TabStop = True
+        LinkLabel1.Text = "LinkLabel1"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(LinkLabel1)
         Controls.Add(GroupBox1)
         Controls.Add(Label2)
         Controls.Add(Button1)
@@ -72,5 +92,7 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents ImageList1 As ImageList
+    Friend WithEvents LinkLabel1 As LinkLabel
 
 End Class
