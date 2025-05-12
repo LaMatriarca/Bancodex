@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Button1 = New Button()
         Label2 = New Label()
+        GroupBox1 = New GroupBox()
         SuspendLayout()
         ' 
         ' Button1
@@ -44,11 +45,21 @@ Partial Class Form1
         Label2.TabIndex = 1
         Label2.Text = "Label2"
         ' 
+        ' GroupBox1
+        ' 
+        GroupBox1.Location = New Point(169, 248)
+        GroupBox1.Name = "GroupBox1"
+        GroupBox1.Size = New Size(250, 125)
+        GroupBox1.TabIndex = 2
+        GroupBox1.TabStop = False
+        GroupBox1.Text = "GroupBox1"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(GroupBox1)
         Controls.Add(Label2)
         Controls.Add(Button1)
         Name = "Form1"
@@ -60,5 +71,6 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Label2 As Label
+    Friend WithEvents GroupBox1 As GroupBox
 
 End Class
